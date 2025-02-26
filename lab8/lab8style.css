@@ -143,3 +143,65 @@ img{width: 100%; display: block;}
 .invert3{
     filter: invert(100%);
 }
+
+/* EXERCISE */
+.sectioncontainer{
+    height: auto;
+    border: solid red 1px;
+}
+.container1, .container2, .container3{
+    width: 500px;
+    height: 600px;
+    border: solid blue 1px;
+    display: inline-block;
+    margin: 2em;
+    position: relative;
+}
+.container1{
+    overflow: hidden;
+    filter: invert(15%);
+}
+.info1{
+    position: absolute;
+    bottom: 20%;
+    border: solid white 2px;
+    color: white;
+    background-color: rgba(30, 30, 30,0.7);
+    left: 15%;
+    right: 15%;
+    padding: 1em;
+}
+.container2{
+    overflow: hidden;
+}
+.container2 img{
+    filter: blur(2px);
+}
+.info2{
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    bottom: 40%;
+    top: 30%;
+    background-color: rgba(177, 213, 224, 0.7);
+    text-align: center;
+    box-shadow: 2px 2px 5px white;
+}
+.info2 h1{
+    color: whitesmoke;
+}
+.info2 a{
+    display: inline-block;
+    padding: 1em 1em;
+    background-color: rgb(66, 185, 224);
+    color: whitesmoke;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.container3{
+    background-image: linear-gradient(rgba(173,216,230,0.8),rgba(0,0,139,0.7)) , url("images/tower.jpg");
+    background-size: 100% 100%;
+    width: 500px;
+    height: 600px;
+}
+/* darkblue - (0,0,139), lightblue - (173,216,230)
