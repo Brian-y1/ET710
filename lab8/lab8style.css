@@ -199,9 +199,38 @@ img{width: 100%; display: block;}
     text-decoration: none;
 }
 .container3{
-    background-image: linear-gradient(rgba(173,216,230,0.8),rgba(0,0,139,0.7)) , url("images/tower.jpg");
+    background-image: linear-gradient(rgba(0,0,139,0.7),rgba(173,216,230,0.8)) , url("images/tower.jpg");
     background-size: 100% 100%;
     width: 500px;
     height: 600px;
 }
-/* darkblue - (0,0,139), lightblue - (173,216,230)
+.info3 h1{
+    position: absolute;
+    top: 40%;
+    bottom: 40%;
+    right: 30%;
+    left: 30%;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+.para1, .para2, .para3{
+    position: absolute;
+    color: white;
+    text-align: center;
+}
+.para1{
+    left: 8%;
+    top: 2%;
+    font-size: 20px;
+}
+.para2{
+    top: 25%;
+    right: 5%;
+    font-size: 18px;
+}
+.para3{
+    bottom: 15%;
+    font-size: 17px;
+}
+
