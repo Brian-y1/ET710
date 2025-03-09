@@ -1,0 +1,147 @@
+.header{
+    display: flex;
+    background-color: aliceblue;
+    justify-content: center;
+}
+.title{
+    color: darkred;
+    padding: 0.75em;
+    font-size: 25px;
+}
+.nav{
+    display: flex;
+    justify-content: left;
+    text-align: center;
+    background-color: darkblue;
+}
+.nav a{
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 0.25em;
+    margin: .5em;
+    padding: 0.5em 1em;
+}
+.nav a:hover{
+    background-color: aliceblue;
+    color: darkblue;
+}
+.introduction{
+    width: 100%;
+    height: 450px;
+    display: inline-block;
+    position: relative;
+    background-image: linear-gradient(rgba(0,0,139,0.7),rgba(173,216,230,0.8)) , url("images/student.jpg");
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+.introduction p{
+    position: absolute;
+    font-size: 50px;
+    bottom: 3%;
+    left: 2.5%;
+    color: whitesmoke;
+}
+.maincontainer{
+    width: 100%;
+    height: 1300px;
+    background-color: aliceblue;
+}
+.cardcontainer{
+    background-color: white;
+    width: 69%;
+    height: 750px;
+    border-radius: 1%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 1px 1px 10px lightgray;
+    float: left;
+    margin: 1em;
+}
+.card{
+    width: 30%;
+    height: 325px;
+    border-radius: 5%;
+    background-color: aliceblue;
+    box-shadow: 1px 1px 10px lightgray;
+    margin: 1em;
+    overflow: hidden;
+}
+.card:hover{
+    box-shadow: 1px 1px 10px lightblue;
+}
+.card p{
+    font-size: 20px;
+    text-align: center;
+    color: darkblue;
+}
+.card img{
+    width: 100%;
+    height: 70%;
+}
+.information{
+    background-color: aliceblue;
+    width: 24%;
+    height: 550px;
+    float: left;
+    margin: 1em;
+    border-radius: 1%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.infocard{
+    background-color: white;
+    margin-bottom: 1em;
+    width: 95%;
+    height: auto;
+    padding: 1%;
+    border-radius: 5%;
+    box-shadow: 1px 1px 10px lightgray;
+   
+}
+.infocard h1{
+    font-size: 20px;
+    text-align: center;
+    color: darkblue;
+}
+.infocard p{
+    font-size: 15px;
+}
+.footer{
+    width: 100%;
+    background-color: aliceblue;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+.footerp1{
+    text-align: center;
+    font-size: 25px;
+    color: gray;
+}
+.footerp1{
+    font-size: 25px;
+    color: gray;
+    text-align: center;
+}
+/* screen size */
+@media only screen and (max-width: 14025px) {
+   .card{width: 27%;}
+}
+@media only screen and (max-width: 1100px) {
+    .maincontainer{height: 1700px;}
+    .card{width: 40%;}
+    .cardcontainer{height: auto; width: 65%;}
+    .information{width: 22%;}
+}
+@media only screen and (max-width: 600px){
+    .cardcontainer{width: 90%;}
+    .card{width: 90%;}
+    .information{width: 90%;}
+    .maincontainer{height: 3200px;}
+}
+
+
+
+
+
