@@ -1,0 +1,41 @@
+.header{
+    height: 75px;
+    background: gray;
+    display: flex;
+    align-items: center;
+}
+.headertitle{
+    width: 100%;
+    font-size: 30px;
+    padding: .65em;
+    text-align: center;
+    color: white;
+}
+.introcontainer{
+    height: 850px;
+    position: relative;
+}
+.introimg img{
+    width: 100%;
+    height: 850px;
+}
+.introcard{
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    top: 25%;
+    left: 40%;
+    background-color: rgba(211, 211, 211, .1);
+    border-radius: 6%;
+}
+.introheader{
+    text-align: center;
+    color: whitesmoke;
+}
+.intropara{
+    color: whitesmoke;
+    padding: 1em;
+}
+.bodyimg1{
+    width: 500px;
+}
