@@ -1,14 +1,24 @@
+/* Main */
 .header{
-    height: 75px;
     background: gray;
     display: flex;
     align-items: center;
 }
 .headertitle{
-    width: 100%;
-    font-size: 30px;
-    padding: .65em;
-    text-align: center;
+    width: 30%;
+    font-size: 35px;
+    padding: .45em;
+    color: white;
+}
+.nav{
+    display: flex;
+    justify-content: right;
+    width: 70%;
+}
+.navlinks{
+    font-size: 25px;
+    padding: .45em 1em;
+    text-decoration: none;
     color: white;
 }
 .introcontainer{
@@ -21,21 +31,38 @@
 }
 .introcard{
     position: absolute;
-    width: 400px;
+    width: 100%;
     height: 200px;
-    top: 25%;
-    left: 40%;
-    background-color: rgba(211, 211, 211, .1);
-    border-radius: 6%;
+    bottom: 0%;
+    background-color: rgba(0, 0, 0, .5);
 }
 .introheader{
-    text-align: center;
     color: whitesmoke;
+    font-size: 30px;
 }
 .intropara{
     color: whitesmoke;
-    padding: 1em;
+    padding: .1em;
+    font-size: 20px;
 }
 .bodyimg1{
     width: 500px;
+}
+/* screen size */
+/* Large */
+@media only screen and (max-width: 1200px){
+    .headertitle{padding: .35em;}
+}
+/* Medium */
+@media only screen and (max-width: 1000px){
+    .nav{justify-content: center;}
+    .introheader{font-size: 28px;}
+    .intropara{font-size: 18px;}
+}
+/* Small */
+@media only screen and (max-width: 640px){
+    .nav{justify-content: center;}
+    .navlinks{font-size: 20px;}
+    .introheader{font-size: 26px;}
+    .intropara{font-size: 16px;}
 }
