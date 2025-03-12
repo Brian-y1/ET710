@@ -94,6 +94,7 @@ float: right;
     width: 90%;
     height: 720px;
     margin: 2em auto;
+    border: 1px solid pink;
 }
 .card{
     width: 40%;
