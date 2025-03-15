@@ -54,6 +54,37 @@
 .bodyimg1{
     width: 500px;
 }
+/* Information */
+.informationheader{
+    text-align: center;
+    font-size: 35px;
+}
+.information{
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.infocard{
+    width: 18%;
+    border-radius: 10px;
+    background-color: lightgray;
+    border: 1px solid gray;
+    box-shadow: 1px 5px 5px gray;
+}
+.infoheader{
+    margin-left: 1em;
+    color: white;
+}
+.infocard p{
+    text-align: center;
+    padding: 1em;
+    color: white;
+}
+.info1{font-size: 18px;}
+.info2{font-size: 15px;}
+.info3{font-size: 15px;}
+.info4{font-size: 15px}
+.info5{font-size: 14px;}
 /* Card */
 .cardheader{
    font-size: 35px;
@@ -63,16 +94,53 @@
     height: 550px;
     display: flex;
     justify-content: space-evenly;
-    border: 1px solid black;
 }
 .card{
-    width: 24%;
+    width: 25%;
     height: auto;
-    border: 1px solid blue;
+    border-radius: 10px;
+    border: 1px solid gray;
+    overflow: hidden;
+    box-shadow: 1px 5px 5px gray;
 }
 .card img{
     width: 100%;
     height: 80%;
+}
+.card b{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+.cardlink{
+    display: flex;
+    justify-content: center;
+}
+.cardlink a{
+    font-size: 25px;
+    background-color: lightgray;
+    text-decoration: none;
+    padding: .25em;
+    border-radius: 5px;
+    color: white;
+    margin-top: .5em;
+}
+.card:hover{
+    box-shadow: 1px 5px 5px lightgray;
+}
+.cardlink a:hover{
+    border: 1px solid gray;
+    background: white;
+    color: gray;
+}
+.footer{
+    height: 50px;
+    background-color: black;
+    font-size: 15px;
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 /* screen size */
 /* Large */
