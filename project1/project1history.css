@@ -29,35 +29,91 @@
 .nav a:hover{
     color: darkred;
 }
-.introcontainer{
-    height: 850px;
-    position: relative;
+.headerimg{
+    height: 815px;
 }
-.introimg img{
-    width: 100%;
-    height: 850px;
+.headerimg img{width: 100%; height: 100%;}
+.title{margin-left: .5em;}
+.about{
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 2em;
 }
-.introcard{
-    position: absolute;
-    width: auto;
-    height: 200px;
-    bottom: 0%;
-    background-color: rgba(0, 0, 0, .5);
+.aboutinfo{
+    width: 49%;
+    height: 500px;
+    text-align: center;
 }
-.introcard h1, .introcard p{
-    color: whitesmoke;
-    margin: 1em;
+.aboutinfo h1{
+    color: crimson;
+    font-size: 35px;
+    font-family: cambria;
+    margin-left: .5em;
 }
-.introcrad h1{
-    font-size: 30px;
+.aboutinfo p{
+    font-size: 22px;
+    margin-top: -.5em;
+    padding: 1em;
 }
-.introcard p{
+.aboutvideo{
+    width: 50%;
+    height: 500px;
+}
+.event{
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 2em;
+}
+.aboutinfo1{
+    width: 49%;
+    height: 450px;
+    text-align: center;
+}
+.aboutinfo1 h1{
+    color: crimson;
+    font-size: 35px;
+    font-family: cambria;
+    margin-left: .5em;
+}
+.aboutinfo1 p{
+    font-size: 22px;
+    margin-top: -.5em;
+    padding: 1em;
+}
+.aboutinfo1 a{
+    font-size: 20px;
+    padding: .5em;
+    background-color: crimson;
+    border: 1px solid gray;
+    text-decoration: none;
+    border-radius: 10px;
+    color: gray;
+}
+.aboutinfo a:hover{
+    color: crimson;
+    background-color: gray;
+    border: 1px solid crimson;
+}
+.aboutvideo1{
+    width: 50%;
+    height: 450px;
+}
+.title1{color: crimson;}
+.listbox{
+    width: 25%;
+    height: auto;
+    margin-left: 1em;
+    border: 1px solid black;
+    margin-bottom: 2em;
+}
+.list{
+    margin: .25em;
     font-size: 20px;
 }
-
-
-
-
 .footer{
     height: 200px;
     display: flex;
@@ -82,21 +138,14 @@
     margin-left: -50px;
     font-size: 17px;
 }
-@media only screen and (max-width: 1250px){
-    .infocard{width: 47%; margin: .5em;}
-    .content{font-size: 20px;}
-    .listh, .informationheader, .headertitle{font-size: 30px;}
-    .intropara{font-size: 18px;}
+@media only screen and (max-width:1250px){
+    .listbox{width: 50%;}
 }
-@media only screen and (max-width: 845px){
-    .headertitle{font-size: 22px;}
-    .nav{justify-content: center;}
-    .navlinks{font-size: 22px;}
-    .listh, .informationheader {font-size: 27px;}
-    .intropara{font-size: 15px;}
+@media only screen and (max-width:900px){
+    .aboutinfo p{font-size: 20px;}
 }
-@media only screen and (max-width: 640px){
-    .infocard{width: 90%;}
-    .navlinks{font-size: 20px;}
-    .headertitle{font-size: 20px;}
+@media only screen and (max-width:675px){
+    .listbox{width: 90%;}
+    .about, .event{ height: auto; justify-content: center;}
+    .aboutinfo, .aboutvideo, .aboutinfo1, .aboutvideo1 {width: 95%;}
 }
