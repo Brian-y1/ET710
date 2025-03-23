@@ -1,29 +1,33 @@
-.header{
-    background: lightblue;
+.headertitle{
+    height: 65px;
+    background-color: darkred;
+    text-align: center;
+    color: white;
+}
+.headertitle h1, .headertitle p{font-family: cambria;}
+.headertitle h1{
+   margin-top: -.25px;
+   font-size: 30px;
+}
+.headertitle p{
+    margin-top: -20px;
+    font-size: 20px;
+}
+.headernav{
+    height: 35px;
+    background: whitesmoke;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
-.headertitle{
-    width: 30%;
-    font-size: 35px;
-    padding: .5em;
-    color: white;
-}
-.nav{
-    display: flex;
-    justify-content: right;
-    width: 70%;
-}
-.navlinks{
-    font-size: 25px;
-    margin-right: 1em;
-    padding: 1em;
+.nav a{
     text-decoration: none;
-    color: white;
+    font-size: 20px;
+    margin: .5em;
+    color: black;
 }
-.navlinks:hover{
-    background: white;
-    color: lightblue;
+.nav a:hover{
+    color: darkred;
 }
 .introcontainer{
     height: 850px;
@@ -35,74 +39,48 @@
 }
 .introcard{
     position: absolute;
-    width: 100%;
+    width: auto;
     height: 200px;
     bottom: 0%;
     background-color: rgba(0, 0, 0, .5);
 }
-.introheader, .intropara{
+.introcard h1, .introcard p{
     color: whitesmoke;
     margin: 1em;
 }
-.introheader{
+.introcrad h1{
     font-size: 30px;
 }
-.intropara{
+.introcard p{
     font-size: 20px;
 }
-.bodyimg1{
-    width: 500px;
-}
-.informationheader{
-    text-align: center;
-    font-size: 35px;
-    color: darkblue;
-}
-.information{
-    height: auto;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    
-}
-.infocard{
-    width: 18%;
-    border-radius: 10px;
-    background-color: rgb(175, 224, 255);
-    border: 1px solid gray;
-    box-shadow: 1px 5px 5px gray;
-}
-.infoheader{
-    margin-left: 1em;
-    color: white;
-}
-.infocard p{
-    text-align: center;
-    padding: 1em;
-    color: white;
-}
-.info1, .info2, .info3, .info4, .info5{font-size: 17px;}
-.main{
-    height: auto;
-    background: lightcyan;
-    margin-top: -10px;
-    padding-top: 1em;
-}
-.listh{
-    color: darkblue;
-    font-size: 35px;
-}
-.content li{
-    color: darkblue;
-    font-size: 25px;
-}
+
+
+
+
 .footer{
-    height: 50px;
-    font-size: 25px;
-    color: lightblue;
-    align-items: center;
+    height: 200px;
     display: flex;
-    justify-content: center;
+    background-color: rgb(161, 161, 161);
+}
+.footertitle{
+    font-size: 20px;
+    font-weight: bolder;
+}
+.footer1{
+    text-align: center;
+}
+.list1{
+    list-style: none;
+}
+.footer1{
+    width: 25%;
+    margin: 1em;
+}
+.list1 li{
+    padding: .5em;
+    margin-left: -50px;
+    font-size: 17px;
 }
 @media only screen and (max-width: 1250px){
     .infocard{width: 47%; margin: .5em;}
