@@ -42,7 +42,7 @@
         </section>
     </main>
 
-    <h1>Cards</h1>
+    <h1 class="text-center">Lab Exercise</h1>
     <section class="container">
         <div class="row justify-context-center">
 
@@ -54,7 +54,7 @@
                 </section>
 
                 <section class="card-body">
-                    <img class="card-img" src="image/rubix.jpg" alt="Picture of a word">
+                    <img class="card-img" src="image/rubix.jpg" alt="Picture of a rubik cube">
                     <p class="card-text">A Rubiks Cube is a cube with each side having one specific color. The goal of the Rubik's cube is to mix the cube and try to reoriant the cube back to it's original form.</p>
                 </section>
 
@@ -64,17 +64,36 @@
             </div>
 
             <!--Card 2-->
-            <div class="card col-3 m-3">
+            <div class="card col-lg-3 col-md-11  m-3">
                 <section class="card-header">
-
+                    <h2 class="card-title">Turtle</h2>
+                    <p class="card-subtitle">Sea creature</p>
                 </section>
 
-                <section class="card-">
-
+                <section class="card-body">
+                    <img class="card-img" src="image/turtle.jpg" alt="Picture of turlte">
+                    <p class="card-text">There are different kinds of turltes.Some you can own and some you can't own. Depending on the turle, it can see a turlte in lives in the sea or in a pond.</p>
                 </section>
 
-                <section>
+                <section class="card-footer">
+                    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#cardmodal2">More info</button>
+                </section>
+            </div>
 
+            <!--Card 3-->
+            <div class="card col-lg-3 col-md-11  m-3">
+                <section class="card-header">
+                    <h2 class="card-title">Computer</h2>
+                    <p class="card-subtitle">Electronics</p>
+                </section>
+
+                <section class="card-body">
+                    <img class="card-img" src="image/computer.jpg" alt="Picture of computer">
+                    <p class="card-text">Computer is something everyone has at home. Some people have cheap computers, pre-build computers, or self-built computers. They usally come with a CPU, Motherboard, ram, and etc to function properly</p>
+                </section>
+
+                <section class="card-footer">
+                    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#cardmodal3">More info</button>
                 </section>
             </div>
         </div>
@@ -89,11 +108,75 @@
                     </div>
 
                     <div class="modal-body">
-                        <img class="card-img" src="image/rubix1.jpg" alt="">
                         <div>
                             <p class="card-text">The standard and traditional Rubik's cube is held in a the form of a 3 by 3. Although from its looks it looks simple, its acually of the the most challenging puzzles to solve.
                                 What makes it so challening is the the fact the rubiks cube is only solvable using whats is refered to as algorithms. These are sets of ordered moves that are used to assist in solving the rubiks cube.
                             </p>
+                        </div>
+
+
+                        <div class="d-flex ">
+                            <img class="card-img w-50 m-1" src="image/rubix1.jpg" alt="Picuture of Rubik cube">
+                            <img class="card-img w-50 m-1" src="image/rubix2.jpg" alt="Picuture of Rubik cube">
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Card Modal 2-->
+        <section class="modal" id="cardmodal2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <p class="modal-title">More about Turtle</p>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div>
+                            <p class="card-text">There of different kinds of turles. They are born in eggs. When a baby sea turle is born, their main pority is to set to the ocean as soon as possible. Turles had a shell that protects from danger.
+                            </p>
+                        </div>
+
+
+                        <div class="d-flex">
+                            <img class="card-img w-50 m-1" src="image/turtle1.jpg" alt="Picuture of Turle">
+                            <img class="card-img w-50 m-1" src="image/turtle2.jpg" alt="Picuture of Turle">
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Card Modal 3-->
+        <section class="modal" id="cardmodal3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <p class="modal-title">More about Computers</p>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div>
+                            <p class="card-text">Almost everything in modern times are digital. People now work either just sitting in front of a computer all day or something else. 
+                                But depending on they are doing for thier jobs the specs that they will want to have on their computer will be different. Some people just have a computer just to play games on their free time.
+                            </p>
+                        </div>
+
+
+                        <div class="d-flex">
+                            <img class="card-img w-50 m-1" src="image/computer1.jpg" alt="Picuture of Turle">
+                            <img class="card-img w-50 m-1" src="image/computer2.jpg" alt="Picuture of Turle">
                         </div>
                     </div>
 
