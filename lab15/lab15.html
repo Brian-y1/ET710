@@ -113,11 +113,18 @@
                 </div>
 
                 <div class="modal-body">
-                    
+                    <label for="email" class="form-label">Email address</label>
+                    <input class="form-control" type="email" id="email" placeholder="user@host.com" 
+                    aria-describedby="emailhelp">
+                    <label for="pass">Password</label>
+                    <input class="form-control" type="password" id="pass" aria-describedby="password">
+                    <div class="form-text" id="password_user">
+                        <p>Password will not be shared with anyone</p>
+                    </div>
                 </div>
 
                 <div class="modal-footer">
-
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">close</button>
                 </div>
             </div>
             
