@@ -1,12 +1,72 @@
 :root{
-    --primarycolor: rgb(252, 252, 252);
-    --secondarycolor: rgb(212, 194, 27);
+    --primarycolor: rgb(236, 236, 236);
+    --secondarycolor: rgb(235, 213, 18);
 }
-.title{
+.cs-header{
     background-color: var(--primarycolor);
     color: var(--secondarycolor);
 }
-.border1{
-    border: 1px solid red;
+.cs-border{
+    border: 1px solid black;
 }
-
+.cs-title{
+    width: 33%;
+    align-items: center;
+}
+.cs-title h1{
+    margin-left: 10px;
+}
+.cs-nav{
+    width: 33%;
+    justify-content: center;
+}
+.cs-nav a{
+    font-size: 22px;
+    color: var(--secondarycolor);
+    text-decoration: none;
+    margin: 10px;
+}
+.cs-more{
+    width: 33%;
+    justify-content: center;
+}
+.cs-more a{
+    font-size: 22px;
+    color: var(--secondarycolor);
+    text-decoration: none;
+    margin: 10px;
+}
+.cs-con-img{
+    border: 1px solid black;
+    height: 800px;
+}
+.cs-intro{
+    height: 850px;
+    position: relative;
+}
+.cs-intro-img{
+    background-image:  linear-gradient( rgba(255,225,255, 0.4), rgb(0, 0, 0)) , url("images/p2-picture-rubiks.jpg");
+    background-size: 100% 100%;
+}
+.cs-intro-info{
+    position: absolute;
+    top: 50%;
+    bottom: 10%;
+    left: 35%;
+    right: 35%;
+    text-align: center;
+}
+.cs-intro-info h1{
+    color: white;
+}
+.cs-intro-info p{
+    font-size: 20px;
+    color: white;
+}
+.cs-intro-info a{
+    font-size: 20px;
+    padding: .5em;
+    background-color: black;
+    text-decoration: none;
+    color: white;
+}
