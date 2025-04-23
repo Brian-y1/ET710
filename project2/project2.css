@@ -2,46 +2,30 @@
     --primarycolor: rgb(236, 236, 236);
     --secondarycolor: rgb(235, 213, 18);
 }
-.cs-header{
+.cs-titlebox{
+    height: auto;
     background-color: var(--primarycolor);
-    color: var(--secondarycolor);
-}
-.cs-border{
-    border: 1px solid black;
 }
 .cs-title{
-    width: 33%;
-    align-items: center;
+    width: 50%;
 }
 .cs-title h1{
     margin-left: 10px;
+    color: var(--secondarycolor);
 }
 .cs-nav{
-    width: 33%;
-    justify-content: center;
+    width: 50%;
+    justify-content: end;
+    align-items: center;
 }
-.cs-nav a{
-    font-size: 22px;
-    color: var(--secondarycolor);
+.cs-button{
     text-decoration: none;
-    margin: 10px;
-}
-.cs-more{
-    width: 33%;
-    justify-content: center;
-}
-.cs-more a{
-    font-size: 22px;
+    margin: 5px;
     color: var(--secondarycolor);
-    text-decoration: none;
-    margin: 10px;
-}
-.cs-con-img{
-    border: 1px solid black;
-    height: 800px;
+    font-size: 20px;
 }
 .cs-intro{
-    height: 850px;
+    height: 863px;
     position: relative;
 }
 .cs-intro-img{

@@ -9,31 +9,86 @@
     </head>
   <body>
     
-    <div class="cs-header d-flex justify-content-between">
-      <div class="cs-title">
-        <h1>PlayCubes</h1>
-      </div>
-
-      <nav class="d-flex cs-nav">
-        <a href="">Home</a>
-        <a href="">Shop</a>
-      </nav>
-
-      <div class="cs-more d-flex">
-        <a href="">About</a>
-        <a href="">Contact Us</a>
-      </div>
+   <div class="cs-titlebox d-flex">
+    <div class="cs-title text-break">
+      <h1>PlayCubes</h1>
     </div>
-
-    <div class="cs-intro cs-intro-img">
-      <div class="cs-intro-info">
-        <h1>Find your Cube here</h1>
-        <p>Pick from our wide Variety of Cubes to find the one that suits and challenges you the best</p>
-        <a href="">Shop Now</a>
-      </div>
-    </div>
-
     
+    <nav class="cs-nav d-flex">
+      <a class="cs-button" href="">Shop</a>
+      <button type="button" class="btn cs-button" data-bs-toggle="modal" data-bs-target="#sign-in">Sign in</button>
+      <button type="button" class="btn cs-button" data-bs-toggle="modal" data-bs-target="#sign-up">Sign up</button>
+
+      <!--Modal-->
+      <!--Sign in Modal-->
+      <section class="modal" id="sign-in" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title">Sign into your account</h2>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+            </div>
+
+            <div class="modal-body">
+              <label for="email" class="form-label">Email address</label>
+              <input class="form-control" type="email" id="email" placeholder="user@host.com">
+              <label for="pass">Password</label>
+              <input class="form-control" type="password" id="pass" aria-describedby="password">
+              <div class="form-text" id="password">
+                <p>Password will not be shared with anyone</p>
+              </div>
+            </div>
+  
+            <div class="modal-footer">
+              <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Sign in</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Sign up Modal-->
+      <section class="modal" id="sign-up" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title">Sign up for a account</h2>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+            </div>
+
+            <div class="modal-body">
+              <label for="email" class="form-label">Email address</label>
+              <input class="form-control" type="email" id="email" placeholder="user@host.com" aria-describedby="email">
+              <div class="form-text" id="email">
+                <p>We will not Share your email to anyone</p>
+              </div>
+              <label for="pass">Password</label>
+              <input class="form-control" type="password" id="pass" aria-describedby="password">
+              <div class="form-text" id="password">
+                <p>Password must be 8-15 chracters with at least one Upper-Case letter</p>
+              </div>
+              <input class="form-check-input" type="checkbox" id="agreementcheck">
+              <label for="agreementcheck">By creating this account you agree with our Terms of Service</label>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Sign up</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </nav>
+   </div>
+
+   <div class="cs-intro cs-intro-img">
+    <div class="cs-intro-info">
+      <h1>Find your Cube here</h1>
+      <p>Pick from our wide Variety of Cubes to find the one that suits and challenges you the best</p>
+      <a href="">Shop Now</a>
+    </div>
+  </div>
+
+  <h1>Pick from </h1>
+    <img src="images/e" alt="">
     
 
 
