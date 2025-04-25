@@ -54,3 +54,10 @@
     text-decoration: none;
     color: white;
 }
+.cs-body-header{
+    text-align: center;
+    color: var(--secondarycolor);
+}
+.border{
+    border: 1px solid red;
+}
