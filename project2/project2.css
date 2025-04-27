@@ -25,7 +25,7 @@
     font-size: 20px;
 }
 .cs-intro{
-    height: 863px;
+    height: 900px;
     position: relative;
 }
 .cs-intro-img{
@@ -60,4 +60,7 @@
 }
 .border{
     border: 1px solid red;
+}
+.container{
+    width: auto;
 }
