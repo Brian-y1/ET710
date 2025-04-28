@@ -15,9 +15,16 @@
     </div>
     
     <nav class="cs-nav d-flex">
-      <a class="cs-button" href="">Shop</a>
+      <button class="btn cs-button" type="button" data-bs-toggle="dropdown"><a class="dropdown-item" href="#"></a>Shop</button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item font-color" href="#regular">Regular Cubes</a></li>
+        <li><a class="dropdown-item font-color" href="#unique">Unique Cubes</a></li>
+        <li><a class="dropdown-item font-color" href="#challenge">Challenge Cubes</a></li>
+      </ul>
       <button type="button" class="btn cs-button" data-bs-toggle="modal" data-bs-target="#sign-in">Sign in</button>
       <button type="button" class="btn cs-button" data-bs-toggle="modal" data-bs-target="#sign-up">Sign up</button>
+      <button type="button" class="btn cs-button">Cart</button>
+        
 
       <!--Modal-->
       <!--Sign in Modal-->
@@ -76,8 +83,8 @@
           </div>
         </div>
       </section>
-    </nav>
-   </div>
+      </nav>
+    </div>
 
    <div class="cs-intro cs-intro-img">
     <div class="cs-intro-info">
@@ -98,7 +105,7 @@
   </section>
 
   <!--Regular section-->
-  <h1 class="cs-body-header mt-5">Regular Rubik's Cubes</h1>
+  <h1 class="cs-body-header mt-5" id="regular">Regular Rubik's Cubes</h1>
   <div class="container">
     <div class="row justify-content-center">
 
@@ -316,7 +323,7 @@
   </div>
 
   <!--Unique Section-->
-  <h1 class="cs-body-header mt-5">Unique Rubik's Cubes</h1>
+  <h1 class="cs-body-header mt-5" id="unique">Unique Rubik's Cubes</h1>
   <div class="container">
     <div class="row justify-content-center">
         <div class="card col-lg-3 col-md-11 col-sm-12 m-3">
@@ -507,7 +514,7 @@
   </div>
 
   <!--Challenge section-->
-  <h1 class="cs-body-header mt-5">Challenge Rubik's Cubes</h1>
+  <h1 class="cs-body-header mt-5" id="challenge">Challenge Rubik's Cubes</h1>
   <div class="container">
     <div class="row justify-content-center">
       <div class="card col-lg-5 col-md-11 col-sm-12 m-3">
@@ -635,7 +642,54 @@
       
     </div>
   </div>
-    
+  
+  <!--Form-->
+  <form class="bg-color p-5 w-50 mx-auto form">
+    <legend class="text-center mb-5">Rate our Service</legend>
+    <div class="mt-3">
+      <label for="address" class="form-label">Email address</label>
+      <input class="form-control" type="email" id="address" placeholder="user@host.com" aria-describedby="email">
+    </div>
+    <div class="form-text" id="email">
+      <p>This form will be sent to your email as a record</p>
+    </div>
+
+    <div class="mt-3">
+      <label for="state">How do you rate us?</label>
+      <select class="form-control" id="state">
+        <option selected></option>
+        <option value="good">Good</option>
+        <option value="okay">Okay</option>
+        <option value="bad">Bad</option>
+      </select>
+    </div>
+
+    <div class="mt-3">
+      <label for="comments">Tell us your experience:</label>
+      <textarea class="form-control" id="comments" rows="3" placeholder="Max 200 chracters" maxlength="200"></textarea>
+    </div>
+    <div class="mt-3">
+      <label for="product">What other kinds of Rubik's Cubes do you want to see?</label>
+      <textarea class="form-control" id="product" rows="3" placeholder="Max 200 chracters" maxlength="200"></textarea>
+    </div>
+
+    <div class="mt-5 text-center">
+      <button class="form-control w-25 btn btn-danger" type="submit" >Submit form</button>
+    </div>
+  </form>
+
+  <footer class="mt-5 bg-color1 cs-footer d-flex">
+    <div class="cs-footer1">
+      <h5 class="mt-4 ms-3">Contact Us</h5>
+      <ul class="list-unstyled ms-4">
+        <li class="h5">Email: PlayCube@gmail.com</li>
+        <li class="h5">Phone Number: (646)-287-9999</li>
+      </ul>
+    </div>
+    <div class="cs-footer2 d-flex">
+      <h3>Made in Visual Studio Code, Project 2</h3>
+    </div>
+  </footer>
     
 
 
