@@ -74,14 +74,32 @@
     margin-top: 10em;
 }
 .cs-footer{
-    height: 125px;
+    height: auto;
+    display: flex;
 }
 .cs-footer1{
-    width: 50%;
+    width: 45%;
     color: gray;
 }
 .cs-footer2{
-    width: 50%;
-    align-items: center;
+    width: 45%;
     color: gray;
+}
+.social-box{
+    height: 60px;
+    width: 60px;
+}
+.social-img{
+    height: 100%;
+    width: 100%;
+}
+.cs-border{
+    border: solid 1px red;
+}
+
+/* Responsive */
+@media only screen and (max-width:992px){
+    .cs-footer{flex-wrap: wrap;}
+    .cs-footer1, .cs-footer2{width: 95%;}
+    .cs-footer2{margin-bottom: 1em;}
 }

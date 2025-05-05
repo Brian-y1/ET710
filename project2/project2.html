@@ -9,7 +9,7 @@
     </head>
   <body>
     
-   <div class="cs-titlebox d-flex">
+  <header class="cs-titlebox d-flex">
     <div class="cs-title">
       <h1 class="ms-4">PlayCubes</h1>
     </div>
@@ -23,7 +23,10 @@
       </ul>
       <button type="button" class="btn cs-button" data-bs-toggle="modal" data-bs-target="#sign-in">Sign in</button>
       <button type="button" class="btn cs-button" data-bs-toggle="modal" data-bs-target="#sign-up">Sign up</button>
-      <button type="button" class="btn me-3">Cart <img src="images/shopicon.svg" alt=""></button>
+      <button type="button" class="btn me-3" data-bs-toggle="dropdown"><a class="dropdown-item" href="#cart">Cart <img src="images/shopicon.svg" alt=""></a></button>
+      <ul class="dropdown-menu col-2 h-25" id="cart">
+        <li class="font-color ms-2">Items added to Cart:</li>
+      </ul>
         
 
       <!--Modal-->
@@ -84,9 +87,9 @@
         </div>
       </section>
       </nav>
-    </div>
+  </header>
 
-   <div class="cs-intro cs-intro-img">
+  <div class="cs-intro cs-intro-img">
     <div class="cs-intro-info">
       <h1>Find your Cube here</h1>
       <p>Pick from our wide Variety of Cubes to find the one that suits and challenges you the best</p>
@@ -109,7 +112,7 @@
   <div class="container">
     <div class="row justify-content-center">
 
-      <div class="card col-lg-3 col-md-11 col-sm-12 m-3">
+      <div class="card col-lg-3 col-md-5 col-sm-11 m-3">
         <section class="card-body">
           <img class="card-img" src="images/shopitem1.jpg" alt="Picture of Rubik's Cube">
           <hr>
@@ -125,7 +128,7 @@
         </section>
       </div>
 
-      <div class="card col-lg-3 col-md-11 col-sm-12 m-3">
+      <div class="card col-lg-3 col-md-5 col-sm-11 m-3">
         <section class="card-body">
           <img class="card-img" src="images/shopitem2.jpg" alt="Picture of Rubik's Cube">
           <hr>
@@ -141,7 +144,7 @@
         </section>
       </div>
 
-      <div class="card col-lg-3 col-md-11 col-sm-12 m-3">
+      <div class="card col-lg-3 col-md-10 col-sm-11 m-3">
         <section class="card-body">
           <img class="card-img" src="images/shopitem3.jpg" alt="Picture of Rubik's Cube">
           <hr>
@@ -326,7 +329,7 @@
   <h1 class="cs-body-header mt-5" id="unique">Unique Rubik's Cubes</h1>
   <div class="container">
     <div class="row justify-content-center">
-        <div class="card col-lg-3 col-md-11 col-sm-12 m-3">
+        <div class="card col-lg-3 col-md-5 col-sm-11 m-3">
           <section class="card-body">
             <img class="card-img" src="images/shopitem4.jpg" alt="Picture of Rubik's Cube">
             <hr>
@@ -342,7 +345,7 @@
           </section>
         </div>
 
-        <div class="card col-lg-3 col-md-11 col-sm-12 m-3">
+        <div class="card col-lg-3 col-md-5 col-sm-11 m-3">
           <section class="card-body">
             <img class="card-img" src="images/shopitem5.jpg" alt="Picture of Rubik's Cube">
             <hr>
@@ -358,7 +361,7 @@
           </section>
         </div>
 
-        <div class="card col-lg-3 col-md-11 col-sm-12 m-3">
+        <div class="card col-lg-3 col-md-10 col-sm-11 m-3">
           <section class="card-body">
             <img class="card-img" src="images/shopitem6.jpg" alt="Picture of Rubik's Cube">
             <hr>
@@ -678,17 +681,23 @@
     </div>
   </form>
 
-  <footer class="mt-5 bg-color1 cs-footer d-flex">
-    <div class="cs-footer1">
+  <footer class="mt-5 bg-color1 cs-footer">
+    <section class="cs-footer1">
       <h5 class="mt-4 ms-3 text-break">Contact Us</h5>
       <ul class="list-unstyled ms-4">
         <li class="h5 text-break">Email: PlayCube@gmail.com</li>
         <li class="h5 text-break">Phone Number: (646)-287-9999</li>
       </ul>
-    </div>
-    <div class="cs-footer2 d-flex">
-      <h3>Made in Visual Studio Code, Project 2</h3>
-    </div>
+    </section>
+
+    <section class="cs-footer2">
+      <h5 class="mt-4 ms-4 text-break">Follow Us On:</h5>
+      <div class="d-flex ms-4">
+        <a class="social-box ms-2" href="https://x.com/" target="_blank"><img class="social-img" src="images/x-icon.svg" alt=""></a>
+        <a class="social-box ms-2" href="https://www.facebook.com/" target="_blank"><img class="social-img" src="images/facebook-icon.svg" alt=""></a>
+        <a class="social-box ms-2" href="https://www.instagram.com/" target="_blank"><img class="social-img" src="images/insta-icon.svg" alt=""></a>
+      </div>
+    </section>
   </footer>
     
 
