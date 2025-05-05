@@ -7,22 +7,25 @@
     background-color: var(--primarycolor);
 }
 .cs-title{
-    width: 50%;
+    width: 40%;
 }
 .cs-title h1{
     margin-left: 10px;
     color: var(--secondarycolor);
 }
 .cs-nav{
-    width: 50%;
+    width: 60%;
     justify-content: end;
     align-items: center;
 }
 .cs-button{
-    text-decoration: none;
-    margin: 5px;
+    margin: .1em;
     color: var(--secondarycolor);
     font-size: 20px;
+}
+.cs-button1{
+    font-size: 20px;
+    margin: 5px;
 }
 .cs-intro{
     height: 900px;
@@ -33,11 +36,11 @@
     background-size: 100% 100%;
 }
 .cs-intro-info{
+    height: auto;
+    width: 25%;
+    left: 38%;
+    top: 40%;
     position: absolute;
-    top: 50%;
-    bottom: 10%;
-    left: 35%;
-    right: 35%;
     text-align: center;
 }
 .cs-intro-info h1{
@@ -86,20 +89,26 @@
     color: gray;
 }
 .social-box{
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
 }
 .social-img{
     height: 100%;
     width: 100%;
 }
-.cs-border{
-    border: solid 1px red;
-}
 
 /* Responsive */
 @media only screen and (max-width:992px){
     .cs-footer{flex-wrap: wrap;}
-    .cs-footer1, .cs-footer2{width: 95%;}
+    .cs-footer1, .cs-footer2{width: 45%;}
     .cs-footer2{margin-bottom: 1em;}
+    .cs-intro-info{width: 50%; left: 25%;}
+}
+@media only screen and (max-width:768px){
+    .cs-titlebox{flex-wrap: wrap;}
+    .cs-footer1, .cs-footer2{width: 90%;}
+    .cs-title, .cs-nav {width: 100%;}
+    .cs-title{text-align: center ;}
+    .cs-nav{justify-content: center;}
+    .cs-intro-info{width: 75%; left: 12%;}
 }
